@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+:root {
+  --index: calc(1vw + 1vh);
+  --color-header: #f4efec;
+  --color-text: #cdc6c3;
+}
+
+@font-face {
+	font-family: montserrat-g;
+	src: url(../fonts/Montserrat-Black.woff2);
+	font-weight: 900;
+}
+
+  body {
+    background: #1a1a1a;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    height: 100%; /* Убедитесь, что body занимает всю высоту экрана */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  .container h2 {
+    color: var(--color-header);
+  }
+  
+  .login {
+    width: 20%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+  }
+  .imglog {
+    height: 8vh;
+    padding: 1vh 0 1vh 0;
+    /* width: 20%; */
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    /* padding: 20px 0; */
+    height: 10vh;
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .hero {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Занимает всю высоту экрана */
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #e63946;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #d62828;
+  }
+  
+  .services {
+    padding: 50px 0;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .service-item {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  .image {
+    width: 50%;
+  }
+  .item__content {
+    display: flex;
+  }
+  .textwrap {
+    height: 100%;
+    /* display: flex; */
+    font-family:  montserrat-g;
+  }
+  .prod__name {
+    font-size: calc(var(--index) * 1.2);
+  }
+  .prod__descript {
+    font-size: var(--index);
+  }
